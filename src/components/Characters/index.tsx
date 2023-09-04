@@ -1,4 +1,4 @@
-import { Container, Perfil, Data } from './styles.ts'
+import { Container, Perfil, Data, Image} from './styles.ts'
 
 export interface Characters {
     name: string
@@ -13,7 +13,7 @@ export function Characters({image, name, actor, house, dateOfBirth, species}:Cha
     return (
         <Container>
             <Perfil>
-                <img src={image} alt="" />
+                <Image background={image}></Image>
                 <h2>{name}</h2>
                 <p>{actor}</p>
             </Perfil>

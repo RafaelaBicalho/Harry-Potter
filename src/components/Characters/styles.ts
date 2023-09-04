@@ -12,14 +12,12 @@ export const Container = styled.div`
     text-align: center;
     width: 400px;
 `
+
 export const Perfil = styled.div`
-    img {
-        background: cover no-repeat;
-        border-radius: 95px;
-        flex-shrink: 0;
-        height: 95px;
-        width: 95px;
-    }
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     h2 {
         color: var(--yellow-700);
@@ -32,6 +30,15 @@ export const Perfil = styled.div`
         font-weight: 400;
     }
 `
+export const Image = styled.div<{background:string}>`
+    background-image: url(${props => props.background});
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 95px;
+    height: 95px;
+    border-radius: 95px;
+`
+
 export const Data = styled.div`
     padding: 21px 0 23px 0;
 
